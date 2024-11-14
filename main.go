@@ -11,6 +11,7 @@ import (
 // Employee represents an employee with basic attributes
 type Employee struct {
 	ID      int    `json:"id"`
+	Salary 	float32	`json:"salary"`
 	Name    string `json:"name"`
 	Role    string `json:"role"`
 	Tech    string `json:"tech"`
@@ -19,16 +20,16 @@ type Employee struct {
 
 
 var employees = []Employee{
-	{ID: 1, Name: "Juan Diego Bermudez", Role: "Bakcned engineer", Tech: "AWS", Email: "juand.bermudez@javeriana.edu.co"},
-	{ID: 2, Name: "Nicolas Quiles", Role: "DevOps Engineer", Tech: "Azure", Email: "nic@gmail.com"},
-	{ID: 3, Name: "Zion", Role: "DevOps Engineer", Tech: "AWS", Email: "liam@gmail.com"},
-	{ID: 4, Name: "Liam Charlie", Role: "Frontend developer", Tech: "React", Email: "zion@gmail.com"},
-	{ID: 5, Name: "Miley Estefanny", Role: "Networking engineer", Tech: "IP", Email: "miley@gmail.com"},
-	{ID: 6, Name: "Johan Ceballos", Role: "Solutions Architect", Tech: "AWS", Email: "johan@gmail.com"},
-	{ID: 7, Name: "Jhon moore", Role: "DevOps Engineer", Tech: "Jira", Email: "jhon@gmail.com"},
-	{ID: 8, Name: "Steve Anita Smith", Role: "Solutions Architect", Tech: "Jira", Email: "steve@gmail.com"},
-	{ID: 9, Name: "Francine Smith", Role: "Frontend developer", Tech: "Next js", Email: "francine@gmail.com"},
-	{ID: 10, Name: "Luke", Role: "Networking engineer", Tech: "AWS", Email: "luke@gmail.com"},
+	{ID: 1, Name: "Juan Diego Bermudez", Salary: 14000000, Role: "Bakcned engineer", Tech: "AWS", Email: "juand.bermudez@javeriana.edu.co"},
+	{ID: 2, Name: "Nicolas Quiles", Salary: 1425000, Role: "DevOps Engineer", Tech: "Azure", Email: "nic@gmail.com"},
+	{ID: 3, Name: "Zion", Salary: 740000, Role: "DevOps Engineer", Tech: "AWS", Email: "liam@gmail.com"},
+	{ID: 4, Name: "Liam Charlie", Salary: 30228995, Role: "Frontend developer", Tech: "React", Email: "zion@gmail.com"},
+	{ID: 5, Name: "Miley Estefanny", Salary: 14100520, Role: "Networking engineer", Tech: "IP", Email: "miley@gmail.com"},
+	{ID: 6, Name: "Johan Ceballos", Salary: 4100000, Role: "Solutions Architect", Tech: "AWS", Email: "johan@gmail.com"},
+	{ID: 7, Name: "Jhon moore", Salary: 9800025, Role: "DevOps Engineer", Tech: "Jira", Email: "jhon@gmail.com"},
+	{ID: 8, Name: "Steve Anita Smith", Salary: 136999, Role: "Solutions Architect", Tech: "Jira", Email: "steve@gmail.com"},
+	{ID: 9, Name: "Francine Smith", Salary: 7458520, Role: "Frontend developer", Tech: "Next js", Email: "francine@gmail.com"},
+	{ID: 10, Name: "Luke", Salary: 4570000, Role: "Networking engineer", Tech: "AWS", Email: "luke@gmail.com"},
 }
 
 
